@@ -28,7 +28,7 @@ func main() {
 	flag.Usage = func() {
 		fmt.Fprint(os.Stderr, fmt.Sprintf(usage))
 	}
-	//flag.Parse()
+	flag.Parse()
 
 	httpClient := &http.Client{
 		Timeout: *timeout,
